@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../app/styles/css/web.css"/>
+    <link rel="stylesheet" href="../app/styles/css/app.css"/>
+    <link rel="stylesheet" href="../app/styles/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../app/styles/css/monokai.min.css"/>
+    <link rel="stylesheet" href="../app/styles/css/themes/monokai_sublime.css"/>
+
+</head>
+
+<body>
+<header id="header" class="header header--fixed hide-from-print" role="banner" style="height: 80px;">
+    <nav class="navbar navbar-fixed-top navbar-inverse"  >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="/">主页</a></li>
+                    <li><a href="#about">关于作者</a></li>
+                    <li><a href="#contact">联系作者</a></li>
+                    <li><a href="/api">API</a></li>
+                    <li class="active"><a href="/dev">开发日志</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right hidden-sm">
+                    <li><a href="/signup" >注册</a></li>
+                    <% if(username){ %>
+                    <li><a href="/userlist" >用户列表</a></li>
+                    <li><a href="/logout" >退出</a></li>
+                    <li ><a href="/signin" style="color:red" >欢迎您，<%= username %></a></li>
+                    <% }else{ %>
+                    <li ><a href="/signin" >登录</a></li>
+                    <% } %>
+                </ul>
+            </div><!-- /.nav-collapse -->
+        </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+</header>
+
+<div class="container " >
+
+    <div class="col-md-9" role="main" >
+        <div  >
+            <div id="dashboard">
+                <h2 id="overview" class="page-header">概览</h2>
+                <p class="lead">
+                    深入了解 node的知识，做个全站是前端工程师，主要介绍常用的知识和一些nodejs模块，
+                    angularjs封装的一些指令和使用方法,平时用到的一些知识。记录点滴生活。
+                </p>
+                <footer><cite title="Source Title">-----Auhtor 刘俊斌（夜黑执事 帷云）（976500133@qq.com）</cite></footer>
+                <p></p>
+
+
+            </div>
+            <div id="node-https">
+                <h2 id="overview" class="page-header">搭建HTTPs服务器</h2>
+                <p class="lead">
+                    使用Express搭建HTTPs加密服务器，也很简单。
+                    https 需要去网站申请
+                </p>
+                <footer><cite title="Source Title">-----Auhtor 刘俊斌（夜黑执事 帷云）（976500133@qq.com）</cite></footer>
+                <p></p>
+
+                <pre>
+                    <code class="javascript">
+
+
+                        var app = require('../app');
+                        var debug = require('debug')('codebeauty:server');
+                        var https = require('https');
+                        var fs = require('fs');
+
+                        var options = {
+                        key:fs.readFileSync('E://SSL/sss.key'),//钥匙
+                        cert:fs.readFileSync('E://SSL/sss.crt'),//证书
+                        passphrase: '1234' //密码
+                        }
+
+                        /**
+                        * Get port from environment and store in Express.
+                        */
+
+                        var port = normalizePort(process.env.PORT || '3000');
+                        app.set('port', port);
+
+                        /**
+                        * Create HTTP server.
+                        */
+
+                        var server = https.createServer(options,app);
+
+                        /**
+                        * Listen on provided port, on all network interfaces.
+                        */
+
+                        server.listen(port);
+
+
+                    </code>
+                </pre>
+            </div>
+
+
+
+            <div id="node-process">
+                <h2 id="overview" class="page-header">Process 系统内置对象</h2>
+                <p class="lead">
+                    介绍一些Process 系统内置对象的方法和属性
+                </p>
+                <footer><cite title="Source Title">-----Auhtor 刘俊斌（夜黑执事 帷云）（976500133@qq.com）</cite></footer>
+                <p></p>
+
+                <pre>
+                    <code class="javascript">
+
+                        process.argv：返回当前进程的命令行参数数组。
+                        process.env：返回一个对象，成员为当前shell的环境变量，比如process.env.HOME。
+                        process.installPrefix：node的安装路径的前缀，比如/usr/local，则node的执行文件目录为/usr/local/bin/node。
+                        process.pid：当前进程的进程号。
+                        process.platform：当前系统平台，比如Linux。
+                        process.title：默认值为“node”，可以自定义该值。
+                        process.version：Node的版本，比如v0.10.18。
+
+
+                    </code>
+                </pre>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="col-md-3" role="complementary" style="margin-top: 10px;">
+        <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top myleftbar">
+            <ul class="nav bs-docs-sidenav">
+                <li><a href="#dashboard">概览</a></li>
+                <li><a href="#node-https">搭建HTTPs服务器</a></li>
+                <li><a href="#node-process">Process 内置对象</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+
+
+
+</div>
+<script src="../bower_components/jquery/dist/jquery.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../app/js/users/sign.js"></script>
+<script src="../app/js/statics/highlight.min.js"></script>
+<script src="../app/js/statics/headroom.js"></script>
+<script>
+    $(document).ready(function() {
+        hljs.configure({useBR: false});
+        hljs.configure({tabReplace: '&nbsp;&nbsp;&nbsp;&nbsp;'});
+        hljs.initHighlightingOnLoad();
+    });
+</script>
+<script>
+    (function() {
+        var header = new Headroom(document.querySelector("#header"), {
+            tolerance: 5,
+            offset : 70,
+            classes: {
+                initial: "animated",
+                pinned: "slideDown",
+                unpinned: "slideUp"
+            }
+        });
+        header.init();
+    }());
+</script>
+</body>
+</html>

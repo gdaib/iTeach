@@ -1,0 +1,28 @@
+{
+  "name": "codebeauty",
+  "version": "0.0.0",
+  "authors": [
+    "baron <976500133@qq.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "code"
+  ],
+  "license": "MIT",
+  "homepage": "/index",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
