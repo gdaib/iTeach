@@ -1,15 +1,15 @@
 # Codebeauty 源码开放
 
-# Codebeauty 源安装方式
+### Codebeauty 源安装方式
 
   ```
-  npm install -g grunt-cli bower yo generator-karma generator-angular
+  npm install && bower install
   ```
 
-## Build & development
+### Build & development
 
 Run `grunt` for building and `grunt serve` for preview.
 
-## Testing
+### Testing
 
 Running `grunt test` will run the unit tests with karma.
