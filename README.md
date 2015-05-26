@@ -1,14 +1,12 @@
-﻿# Codebeauty 源码开放
+﻿# 刘俊斌-自学Node实践网站-Codebeauty 
 
-### Codebeauty 源安装方式
+
+
+### Codebeauty 安装方式
 
   ```
-  npm install && bower install
+  npm install && bower install 
   ```
-
-### Notices
-
-Run `grunt` for building and `grunt serve` for preview.
 
 ### 涉及模块
 
@@ -24,6 +22,11 @@ Run `grunt` for building and `grunt serve` for preview.
  9.Https 
 
  ```
+
+
+### Notices
+
+Run `grunt` for building and `grunt serve` for preview.
 
 
 ### Version
