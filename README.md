@@ -10,6 +10,21 @@
 
 Run `grunt` for building and `grunt serve` for preview.
 
+### 涉及模块
+
+ ```
+ 1.Express
+ 2.Path
+ 3.Morgan
+ 4.Cookie-parser
+ 5.Body-parser
+ 6.Mongoose
+ 7.Express-session
+ 8.Connect-mongo
+ 9.Https 
+
+ ```
+
 
 ### Version
 
