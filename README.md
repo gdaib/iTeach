@@ -31,7 +31,7 @@
 ### Notices
 
 由于使用到了mongoDb，所以要自行安装
-Run `grunt` for building and `grunt serve` for preview.
+
 
 
 ### Version
