@@ -1,6 +1,7 @@
-﻿# 刘俊斌-自学Node实践网站-Codebeauty 
+﻿# 自学Node实践网站-Codebeauty 
 
-
+###欢迎喜欢技术专研的人加我的群 
+###脚本娃娃-AngularJS 9区 ##457343712
 
 ### Codebeauty 安装方式
 
