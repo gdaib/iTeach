@@ -9,7 +9,7 @@
 #### way of participation
 
 ##### 1. submit [iTeach-issues](https://github.com/eryuechanghe/iTeach/issues/new) submit [Article-issues](https://github.com/eryuechanghe/Article/issues/new)
-##### 2. 加群 Angular-开源2区（<code>457343712</code>）
+##### 2. 加QQ群 Angular-开源2区（<code>457343712</code>）
 ##### 3. Follow-up major maintenance [issues](https://github.com/eryuechanghe/iTeach/issues)
 
  > [2017Suspend maintenance jianshu](https://www.jianshu.com/u/e0067da84ee0)
