@@ -16,8 +16,6 @@
 
 ## React Rtcs
 
-### Install
-
 ```bash
 npm install rtcs --save
 ```
@@ -26,8 +24,6 @@ npm install rtcs --save
 
 
 # Util (Speed up development)
-
-### how to use
 
 [document](https://github.com/eryuechanghe/iTeach/tree/master/extend)
 
