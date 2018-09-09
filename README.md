@@ -28,10 +28,6 @@ npm install rtcs --save
 [详情文档](https://github.com/976500133/FETopic/tree/master/extend)
 
 
-# Interview
-
-
-
 
 
 
